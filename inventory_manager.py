@@ -5,6 +5,9 @@ INF1103 Week 5 - Inventory Management System
 import json
 import os
 
+from inventory import Inventory
+from product import Product
+
 INVENTORY_FILE = "inventory.json"
 
 # Initial inventory with 3 products
@@ -15,21 +18,31 @@ inventory = [
 ]
 
 
-def load_inventory():
-    global inventory
+def load_inventory(inventory):
     if os.path.exists(INVENTORY_FILE):
         print(f"{INVENTORY_FILE} found.")
         with open(INVENTORY_FILE, "r") as f:
-            inventory = json.load(f)
+            data = json.load(f)
+        for item in data:
+            product = Product(item["id"], item["name"], item["price"], item["stock"])
+            inventory.add_product(product)
         print("Inventory loaded successfully.")
     else:
         print(f"{INVENTORY_FILE} not found. Starting with default inventory.")
 
 
-def save_inventory():
+def save_inventory(inventory):
     print("\nSaving inventory...")
+    data = []
+    for product in inventory.get_products():
+        data.append({
+            "id": product.get_product_id(),
+            "name": product.get_name(),
+            "price": product.get_price(),
+            "stock": product.get_stock(),
+        })
     with open(INVENTORY_FILE, "w") as f:
-        json.dump(inventory, f, indent=4)
+        json.dump(data, f, indent=4)
     print(f"Inventory saved successfully to {INVENTORY_FILE}.")
 
 
