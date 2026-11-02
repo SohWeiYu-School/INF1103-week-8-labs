@@ -12,8 +12,9 @@ class Product:
     def update_stock(self, quantity):
         if quantity < 0:
             print("Quantity must be 0 or more")
-            return
+            return False
         self.__stock = quantity
+        return True
 
     def get_product_id(self):
         return self.__product_id
