@@ -1,0 +1,13 @@
+class Product:
+
+    def __init__(self, product_id, name, price, stock):
+        self.__product_id = product_id
+        self.__name = name
+        self.__price = price
+        self.__stock = stock
+
+    def display_information(self):
+        print(f"ID: {self.__product_id} | Name: {self.__name} | Price: ${self.__price:.2f} | Stock: {self.__stock}")
+
+product1 = Product("P004", "testproduct", 400, 2)
+product1.display_information()
