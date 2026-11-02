@@ -1,0 +1,83 @@
+commit cf3bbef4d8a4ee28d2a7837583dc94903090864a
+Author: sohweiyu-school <2603216@sit.singaporetech.edu.sg>
+Date:   Mon Nov 2 16:56:29 2026 +0800
+
+    chore: add test run data and Docker screenshots
+
+commit cc027cc66796871ad06f0c6ef5161390378b2d8d
+Author: sohweiyu-school <2603216@sit.singaporetech.edu.sg>
+Date:   Mon Nov 2 16:56:29 2026 +0800
+
+    docs: add UML class diagram
+
+commit 6d357654970cff670886bf8220153085561a0925
+Author: sohweiyu-school <2603216@sit.singaporetech.edu.sg>
+Date:   Mon Nov 2 16:56:29 2026 +0800
+
+    build: copy all Python files and inventory.json into Docker image
+
+commit ad2d8ae50c0ef28c7dc403c4ec4789b79087a698
+Author: sohweiyu-school <2603216@sit.singaporetech.edu.sg>
+Date:   Mon Nov 2 16:35:17 2026 +0800
+
+    refactor: rewrite menu to use Inventory and Product objects
+
+commit cefd0b5d9e8a51f5b1767ddc5d0f1a76100264c2
+Author: sohweiyu-school <2603216@sit.singaporetech.edu.sg>
+Date:   Mon Nov 2 16:35:17 2026 +0800
+
+    feat(product): return update result from update_stock
+
+commit eee057bf0e482eccea98ddeae36e76afb41c5c7a
+Author: sohweiyu-school <2603216@sit.singaporetech.edu.sg>
+Date:   Mon Nov 2 16:33:37 2026 +0800
+
+    refactor: load and save inventory as Product objects
+
+commit f022cf8756f9a9cf5d7f585988357399e92cd2b5
+Author: sohweiyu-school <2603216@sit.singaporetech.edu.sg>
+Date:   Mon Nov 2 16:33:37 2026 +0800
+
+    feat(inventory): add get_products and remove temporary test code
+
+commit 8d2978a9a3d3e6d48cc3a5e4fbfa2a13de551572
+Author: sohweiyu-school <2603216@sit.singaporetech.edu.sg>
+Date:   Mon Nov 2 16:33:37 2026 +0800
+
+    feat(product): add name, price and stock getters
+
+commit ea7f76bf22c4201a79217ab943f3c7c9ff884902
+Author: sohweiyu-school <2603216@sit.singaporetech.edu.sg>
+Date:   Mon Nov 2 15:55:47 2026 +0800
+
+    feat(inventory): add Inventory class with add, search and display
+
+commit ff61d384d876afe8d643e84e84cb4c24e0645e98
+Author: sohweiyu-school <2603216@sit.singaporetech.edu.sg>
+Date:   Mon Nov 2 15:55:47 2026 +0800
+
+    chore(product): remove temporary test code
+
+commit 1c2aba9874661c59d4cb9a10ed0c2431a0a48203
+Author: sohweiyu-school <2603216@sit.singaporetech.edu.sg>
+Date:   Mon Nov 2 15:10:27 2026 +0800
+
+    feat(product): add update_stock with validation and product ID getter
+
+commit e149f24484fd8bdc0d2deb452fcdd3321ea224f6
+Author: sohweiyu-school <2603216@sit.singaporetech.edu.sg>
+Date:   Mon Nov 2 14:55:50 2026 +0800
+
+    feat(product): add Product class with private attributes and display method
+
+commit f5bb67e7d68376be3baeaf5a6b1f5bed28648745
+Author: sohweiyu-school <2603216@sit.singaporetech.edu.sg>
+Date:   Mon Nov 2 14:55:42 2026 +0800
+
+    chore: copy inventory.json and dockerfile from Week 5
+
+commit 0f5549aeb8734273d7cec158b731ce541a79302b
+Author: sohweiyu-school <2603216@sit.singaporetech.edu.sg>
+Date:   Mon Nov 2 14:10:16 2026 +0800
+
+    Initial commit: Week 5 inventory system as starting point
