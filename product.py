@@ -19,13 +19,3 @@ class Product:
         return self.__product_id
         
 
-product1 = Product("P004", "testproduct", 400, 2)
-product1.display_information()
-product1.update_stock(40)
-product1.display_information()
-
-product1.update_stock(-5)
-product1.display_information()
-
-print(product1.get_product_id())
-
