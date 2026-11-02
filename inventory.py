@@ -21,11 +21,5 @@ class Inventory:
                 return product
         return None
 
-inventory=Inventory()
-testproduct=Product("P009", "Test", 12000, 15)
-inventory.add_product(testproduct)
-inventory.display_all()
-found = inventory.search_product("P009")
-found.display_information()
-
-print(inventory.search_product("P999"))
+    def get_products(self):
+        return self.__products
